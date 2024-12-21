@@ -1,4 +1,4 @@
-def PushImage(){
+def call(){
   echo "Pushing image to DockerHub"
                 withCredentials([usernamePassword('credentialsId':"DockerHubCredentials",passwordVariable:"dockerHubPass",usernameVariable:"dockerHubUser")])
                 {
